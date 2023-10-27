@@ -1,0 +1,216 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("./assets/images/bg-intro-mobile.png");
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    text-align: center;
+}
+
+/* Title & Description */
+#page-title {
+    font-size: 1.65rem;
+    width: 80%;
+    margin: 5.5rem auto 1.25rem auto;
+}
+#page-desc {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+/* Call to Action Title */
+#call-title-background {
+    background-color: hsl(248, 32%, 49%);
+    padding: 1.25rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .75rem;
+    box-shadow: 0px 8px #d96a6c ;
+}
+#text-call-title {
+    width: 75%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+#text-call-title span {
+    font-weight: 600;
+}
+
+/* Sign-Up Form */
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 8px #d96a6c ;
+}
+.input-fields {
+    margin: 0 .5rem;
+    /* padding: 1rem; */
+    height: 3rem;
+    padding-left: 2rem;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    color: black;
+}
+.input-fields:focus {
+    outline-color: hsl(248, 32%, 49%);
+}
+.input-fields::placeholder {
+    font-weight: 600;
+}
+.input-fields:first-child {
+    margin-top: .5rem;
+}
+.field-containers {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.field-containers img {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translate(0, -85%)
+}
+.field-containers p {
+    display: none;
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: end;
+    margin-top: .5rem;
+    margin-right: .75rem;
+}
+.error::placeholder {
+    color: hsl(0, 100%, 74%);
+}
+#btn-submit {
+    margin: .75rem .5rem 0 .5rem;
+    padding: 1rem;
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#btn-submit:hover {
+    background-color: #77e2b4;
+}
+#fine-print {
+    color: hsl(246, 25%, 77%);
+    font-size: .75rem;
+    width: 90%;
+    margin: .25rem auto .5rem auto;
+}
+#fine-print span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+/* Footer */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(65, 100%, 50%); 
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 65%;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        height: 100vh;
+        justify-content: center;
+    }
+    main {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-desc {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
+    #page-title, #page-desc {
+        margin: 0;
+        width: 100%;
+    }
+    #page-title {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+    #page-desc {
+        width: 90%;
+    }
+    .main-section {
+        max-width: 600px;
+    }
+    #call-title-background {
+        margin-bottom: 1.5rem;
+    }
+    .input-fields:first-child {
+        margin-top: 1rem;
+    }
+    .field-containers img {
+        transform: translate(-100%, -50%)
+    }
+    #fine-print {
+        width: 85%;
+        margin: .5rem auto 1.5rem auto;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media (min-width: 1440px) {
+    main {
+        gap: 4rem;
+    }
+    #page-title {
+        font-size: 3rem;
+        width: 70%;
+    }
+    .input-fields {
+        margin: 0 1.5rem;
+    }
+}
+@media (min-width: 1700px) {
+    #page-desc {
+        width: 70%;
+    }
+}

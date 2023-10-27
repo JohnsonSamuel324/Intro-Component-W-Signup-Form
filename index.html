@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    <div class="product-desc">
+      <h1 id="page-title">Learn to code by watching others</h1>
+      <p id="page-desc">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="main-section">
+      <div id="call-title-background">
+      <h2 id="text-call-title"><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
+    </div>
+      <form action="" method="get" class="form-signup">
+        <div class="field-containers" id="fName-container">
+          <input type="text" name="firstName" class="input-fields" placeholder="First Name" id="input-fName" onkeydown="resetErrors('input-fName', 'fname-img-error', 'fname-text-error')">
+          <img class="img-error" id="fname-img-error" src="./assets/images/icon-error.svg" alt="Error no first name">
+          <p class="text-error" id="fname-text-error">First name field cannot be empty</p>
+        </div>
+        <div class="field-containers" id="lName-container">
+          <input type="text" name="lastName" class="input-fields" placeholder="Last Name" id="input-lName" onkeydown="resetErrors('input-lName', 'lname-img-error', 'lname-text-error')">
+          <img class="img-error" id="lname-img-error" src="./assets/images/icon-error.svg" alt="Error no first name">
+          <p class="text-error" id="lname-text-error">Last name field cannot be empty</p>
+        </div>
+        <div class="field-containers" id="email-container">
+          <input type="text" name="email" class="input-fields" placeholder="Email Address" id="input-email" onkeydown="resetErrors('input-email', 'email-img-error', 'email-text-error')">
+          <img class="img-error" id="email-img-error" src="./assets/images/icon-error.svg" alt="Error no first name">
+          <p class="text-error" id="email-text-error">Looks like this is not an email</p>
+        </div>
+        <div class="field-containers" id="email-container">
+          <input type="password" name="password" class="input-fields" placeholder="Password" id="input-pwd" onkeydown="resetErrors('input-pwd', 'pwd-img-error', 'pwd-text-error')">
+          <img class="img-error" id="pwd-img-error" src="./assets/images/icon-error.svg" alt="Error no first name">
+          <p class="text-error" id="pwd-text-error">Password cannot be empty</p>
+        </div>
+        <button id="btn-submit" type="button" onclick="submitSignup()">CLAIM YOUR FREE TRIAL</button>
+        <p id="fine-print">By clicking the button, you are agreeing to our <span>Terms and services</span></p>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Samuel Johnson</a>.
+    </p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
