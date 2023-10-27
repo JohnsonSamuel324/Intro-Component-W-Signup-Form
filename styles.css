@@ -149,6 +149,8 @@ main {
     body {
         height: 100vh;
         justify-content: center;
+        background-image: url("./assets/images/bg-intro-desktop.png");
+        background-size: cover;
     }
     main {
         width: 80%;
@@ -202,7 +204,7 @@ main {
     }
     #page-title {
         font-size: 3rem;
-        width: 70%;
+        width: 75%;
     }
     .input-fields {
         margin: 0 1.5rem;
