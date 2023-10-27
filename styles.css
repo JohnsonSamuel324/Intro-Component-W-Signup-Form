@@ -187,7 +187,7 @@ main {
         margin-top: 1rem;
     }
     .field-containers img {
-        transform: translate(-100%, -50%)
+        transform: translate(-25%, -65%)
     }
     #fine-print {
         width: 85%;
@@ -205,6 +205,9 @@ main {
     #page-title {
         font-size: 3rem;
         width: 75%;
+    }
+    .field-containers img {
+        transform: translate(-75%, -65%)
     }
     .input-fields {
         margin: 0 1.5rem;
